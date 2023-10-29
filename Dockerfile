@@ -9,7 +9,7 @@ WORKDIR /app
 
 # pip를 업그레이드하고 필요한 패키지들을 설치합니다.
 RUN pip install --upgrade pip && \
-    pip install fastapi uvicorn[standard] tensorflow
+    pip install fastapi uvicorn[standard] tensorflow torch
 
 # 8000 포트(기본적으로 FastAPI가 이 포트에서 실행됩니다)를 외부로 노출시킵니다.
 EXPOSE 8000
