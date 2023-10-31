@@ -44,7 +44,8 @@ def predict(text):
   indices = encode_review(text)
   indices = np.array([indices])
   
-  result = model.predict_classes(indices)
+  y_prob = model.predict(indices)
+  result = y_prob.argmax(axis=-1)
 
   return result[0][0] == 1
 
