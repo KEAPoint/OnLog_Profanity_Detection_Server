@@ -4,7 +4,7 @@
 
 음소, 음절별로 문장을 분해하여 인공지능을 통해 비속어 여부를 분석할 수 있습니다.
 
-## 변경 사항
+## ❗️ 변경 사항
 
 이 프로젝트는 [원본 프로젝트](https://github.com/hjh010501/appropriate-filetering)를 기반으로 하고 있습니다.
 
@@ -22,35 +22,35 @@
 > IDE: Pycharm  
 > Python: 3.11.6
 
-## 프로젝트 개발/실행
+## ✅ 프로젝트 개발/실행
 
 해당 프로젝트를 추가로 개발 혹은 실행시켜보고 싶으신 경우 아래의 절차에 따라 진행해주세요
 
-1. 가상 환경 생성
+#### 1. 가상 환경 생성
 
 ```commandline
 python3 -m venv venv
 ```
 
-2. 가상 환경 활성화
+#### 2. 가상 환경 활성화
 
 ```commandline
 source venv/bin/activate
 ```
 
-3. requirements 다운로드
+#### 3. requirements 다운로드
 
 ```commandline
 pip install -r requirements.txt
 ```
 
-4. 프로그램 실행
+#### 4. 프로그램 실행
 
 ```commandline
 uvicorn api:app --port 8000 --reload
 ```
 
-참고) 프로젝트가 실행 중인 환경에 한해 아래 URL에서 API 명세서를 확인할 수 있습니다
+**참고) 프로젝트가 실행 중인 환경에 한해 아래 URL에서 API 명세서를 확인할 수 있습니다**
 
 ```commandline
 http://localhost:8000/docs
